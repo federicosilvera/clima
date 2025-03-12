@@ -1,0 +1,11 @@
+.info-clima{
+    border: solid rgb(148, 148, 148) 0.3px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 20%;
+    height: auto;
+    background-color: aliceblue;
+}
