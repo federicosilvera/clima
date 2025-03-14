@@ -16,7 +16,7 @@ const Forms = ({newLocation}) => {
     <div className='form'>
         <form onSubmit={onSubmit}>
             <div className='container-input'>
-                <input className='input' typet='text' placeholder='Ciudad' onChange={(e) =>setCity(e.target.value)}/>
+                <input className='input' typet='text' placeholder='Ingrese una ciudad' onChange={(e) =>setCity(e.target.value)}/>
                     <button className='button' type='submit'>Buscar</button>
             </div>
         </form>

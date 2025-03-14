@@ -55,16 +55,20 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
                     <img className='image' src='https://images.pexels.com/photos/1816714/pexels-photo-1816714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='imagen de ciudad'/>  
                 <div>
                   
-                  <div className='data'>
+                  <div >
                       <h5 className='temps'>Temperatura maxima: {(weather.main.temp_max - 273.15).toFixed(1)}°C </h5>
                       <h5 className='temps'>Temperatura minimo: {(weather.main.temp_min - 273.15).toFixed(1)}°C </h5>
                       <h5 className='temps'>Sensacion termica: {(weather.main.feels_like - 273.15).toFixed(1)}°C </h5>
                       <h5 className='temps'>Humedad: {(weather.main.humidity)}%</h5>
                       <h5 className='temps'>Velocidad del viento: {(weather.wind.speed)}m/s</h5>
-                    <div >
-                    <hr/>
-
-                    <div>
+                    <div >                  
+                    </div> 
+                  </div>  
+                </div>  
+              </div>
+              
+            </div>
+            <div >
                       <div className='temps'>
                         <p className='fore-date'>{forecastDate3}h</p>
                         <p><img src={iconUrl3} alt='icon'/>{forecast.list[1].weather[0].description}</p>
@@ -81,12 +85,8 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
                         <p>{(forecast.list[3].main.temp - 273.15).toFixed(1)}°C</p>
                       </div>
                     </div>
-                    </div> 
-                  </div>  
-                </div>  
-              </div>
-            </div>
           </div>
+          
         ):(
           <h2 className="no-info"></h2>
         )

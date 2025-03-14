@@ -4,4 +4,8 @@
 
 body{
   background-color: #2F3544;
+  background-image: url('../assets/images/clouds.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
