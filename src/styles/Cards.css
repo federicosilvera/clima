@@ -1,4 +1,4 @@
- .image{
+ .image-city{
     max-width: 60%;
 }
 
@@ -9,7 +9,7 @@
 }
 
 div .data{
-
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 60%;
@@ -85,6 +85,10 @@ div .data{
 }
 
 @media (max-width:1280px) {
+    .image-city{
+       max-width: 20vh;
+    }
+
     .wait{
         height: 40vh;
         display: flex;
@@ -93,6 +97,7 @@ div .data{
 
     .no-info{
         font-size: 1.8rem;
+        padding: 10px;
     }
 
     .showData{

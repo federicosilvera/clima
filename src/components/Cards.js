@@ -50,7 +50,7 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
                 <p className='title-date'>{date}</p>
                 <h1 className='title-temp'> {(weather.main.temp - 273.15).toFixed(1)}°C</h1>
                 <p className='title-icon'><img src={iconUrl} alt="icon"/>{weather.weather[0].description}</p>
-                <img className='image' src='https://images.pexels.com/photos/1816714/pexels-photo-1816714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='imagen de ciudad'/>  
+                <img className='image-city' src='https://images.pexels.com/photos/1816714/pexels-photo-1816714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='imagen de ciudad'/>  
                   <div> 
                     <div >
                       <h5 className='temps'>Temperatura maxima: {(weather.main.temp_max - 273.15).toFixed(1)}°C </h5>
