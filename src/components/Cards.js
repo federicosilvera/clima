@@ -65,18 +65,18 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
                    <div >
                       <div className='temps'>
                         <p className='fore-date'>{forecastDate3}h</p>
-                        <p><img src={iconUrl3} alt='icon'/>{forecast.list[1].weather[0].description}</p>
-                        <p>{(forecast.list[1].main.temp - 273.15).toFixed(1)}°C</p>
+                        <p className='paraph'><img src={iconUrl3} alt='icon'/>{forecast.list[1].weather[0].description}</p>
+                        <p className='paraph'>{(forecast.list[1].main.temp - 273.15).toFixed(1)}°C</p>
                       </div>
                       <div className='temps'>
                         <p className='fore-date'>{forecastDate6}h</p>
-                        <p><img src={iconUrl6} alt='icon'/>{forecast.list[2].weather[0].description}</p>
-                        <p>{(forecast.list[2].main.temp - 273.15).toFixed(1)}°C</p>
+                        <p className='paraph'><img src={iconUrl6} alt='icon'/>{forecast.list[2].weather[0].description}</p>
+                        <p className='paraph'>{(forecast.list[2].main.temp - 273.15).toFixed(1)}°C</p>
                       </div>
                       <div className='temps'>
                         <p className='fore-date'>{forecastDate9}h</p>
-                        <p><img src={iconUrl9} alt='icon'/>{forecast.list[3].weather[0].description}</p>
-                        <p>{(forecast.list[3].main.temp - 273.15).toFixed(1)}°C</p>
+                        <p className='paraph'><img src={iconUrl9} alt='icon'/>{forecast.list[3].weather[0].description}</p>
+                        <p className='paraph'>{(forecast.list[3].main.temp - 273.15).toFixed(1)}°C</p>
                       </div>
                   </div>
           </div> 

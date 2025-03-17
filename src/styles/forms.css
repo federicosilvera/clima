@@ -3,6 +3,7 @@
     border-radius: 10px;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
     color: white;
+    margin-left: 5px;
 }
 
 .input{
@@ -18,4 +19,25 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+
+@media (max-width:1280px) {
+    .input{
+        max-width: 40vh;
+        display: flex;
+        justify-self: center;
+    }
+
+    .button{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        margin-top: 5px;
+        padding-top: 10px;
+        
+    }
+
+    .form{
+        padding: 0px;
+    }
 }
