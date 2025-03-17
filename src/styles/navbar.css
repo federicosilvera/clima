@@ -1,6 +1,11 @@
+a{
+    margin: 0px;
+    color: white;
+}
+
 .nav{
     padding: 5px;
-    background-color: rgb(58, 56, 56);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -8,8 +13,4 @@
     height: 5vh;
     font-size: 1.4rem ;
     font-family: 'Times New Roman', Times, serif;
-}
-
-h3{
-    margin: 0px;
 }

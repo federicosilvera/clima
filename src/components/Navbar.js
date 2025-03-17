@@ -7,13 +7,12 @@ const Navbar = () => {
     <div className='nav'>
       <nav >
         <div>
-          <h3>Prediccion Meteorologica</h3>
+          <a className='title' href='./App.js'>Prediccion Meteorologica</a>
         </div>
       </nav>
 
     </div>
     </>
-    
   )
 }
 

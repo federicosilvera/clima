@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/Cards.css'
 import Spinner from './Spinner'
+import waiting from '../assets/images/waiting.svg'
 
 const Cards = ({loadingData, weather, showData, forecast}) => {
 
@@ -40,35 +41,28 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
 
   return (
     <div className='cards'>
-
       {
         showData === true ? (
-
           <div className='showData'>
-            <div className='data'>
-              
+            <div className='data'>              
               <div>
-              <h3 className='title-city'>{weather.name}</h3>
-                    <p className='title-date'>{date}</p>
-                    <h1 className='title-temp'> {(weather.main.temp - 273.15).toFixed(1)}°C</h1>
-                    <p className='title-icon'><img src={iconUrl} alt="icon"/>{weather.weather[0].description}</p>
-                    <img className='image' src='https://images.pexels.com/photos/1816714/pexels-photo-1816714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='imagen de ciudad'/>  
-                <div>
-                  
-                  <div >
+                <h3 className='title-city'>{weather.name}</h3>
+                <p className='title-date'>{date}</p>
+                <h1 className='title-temp'> {(weather.main.temp - 273.15).toFixed(1)}°C</h1>
+                <p className='title-icon'><img src={iconUrl} alt="icon"/>{weather.weather[0].description}</p>
+                <img className='image' src='https://images.pexels.com/photos/1816714/pexels-photo-1816714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='imagen de ciudad'/>  
+                  <div> 
+                    <div >
                       <h5 className='temps'>Temperatura maxima: {(weather.main.temp_max - 273.15).toFixed(1)}°C </h5>
                       <h5 className='temps'>Temperatura minimo: {(weather.main.temp_min - 273.15).toFixed(1)}°C </h5>
                       <h5 className='temps'>Sensacion termica: {(weather.main.feels_like - 273.15).toFixed(1)}°C </h5>
                       <h5 className='temps'>Humedad: {(weather.main.humidity)}%</h5>
                       <h5 className='temps'>Velocidad del viento: {(weather.wind.speed)}m/s</h5>
-                    <div >                  
-                    </div> 
+                    </div>  
                   </div>  
-                </div>  
               </div>
-              
             </div>
-            <div >
+                   <div >
                       <div className='temps'>
                         <p className='fore-date'>{forecastDate3}h</p>
                         <p><img src={iconUrl3} alt='icon'/>{forecast.list[1].weather[0].description}</p>
@@ -84,16 +78,17 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
                         <p><img src={iconUrl9} alt='icon'/>{forecast.list[3].weather[0].description}</p>
                         <p>{(forecast.list[3].main.temp - 273.15).toFixed(1)}°C</p>
                       </div>
-                    </div>
-          </div>
-          
+                  </div>
+          </div> 
         ):(
-          <h2 className="no-info"></h2>
+        <>
+          <h2 className="no-info">Hola 👋, por favor ingresa una ciudad para dar nuestras aproximaciones meteorologicas ⛅</h2>
+          <div> <img  className='wait' src={waiting} alt='Imagen esperando' /> </div>
+        </>
         )
       }
 
-    </div>
-    
+    </div>   
   )
 }
 

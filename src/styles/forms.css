@@ -1,8 +1,8 @@
-.form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+.button{
+    height: 3em;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;
 }
 
 .input{
@@ -12,7 +12,10 @@
     text-align: center;
 }
 
-.button{
-    height: 3em;
-    border-radius: 10px;
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }

@@ -60,14 +60,12 @@ const WeatherPanel = () => {
         <Forms 
             newLocation ={getLocation}
         />
-
         <Cards 
             showData = {show}
             loadingData = {loading}
             weather = {weather}
             forecast = {forecast}
         />    
-
     </React.Fragment>
   )
 }

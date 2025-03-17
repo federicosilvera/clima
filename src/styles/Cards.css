@@ -6,10 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(58, 56, 56, 0.4);
- 
- 
-
 }
 
 div .data{
@@ -65,7 +61,7 @@ div .data{
 }
 
 .temps{
-    color: white;
+    color: black;
     font-size: 1.2rem;
 
 }
@@ -73,4 +69,17 @@ div .data{
 .fore-date{
     margin: 5px;
     font-size: 1.4rem;
+}
+
+.no-info{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.wait{
+    height: 60vh;
+    display: flex;
+    justify-self: center;
 }
