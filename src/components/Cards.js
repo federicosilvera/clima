@@ -7,7 +7,7 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
 
   var today = new Date();
   var day = today.getDate();
-  var month = today.getMonth();
+  var month = today.getMonth() + 1;
   var year = today.getFullYear();
   var date = day + '/' + month + '/' + year;
 
@@ -43,26 +43,25 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
     <div className='cards'>
       {
         showData === true ? (
-          <div className='showData'>
-            <div className='data'>              
-              <div>
-                <h3 className='title-city'>{weather.name}</h3>
+          <div className='showData'>            
+              <div className='data'>
+               <h3 className='title-city'>{weather.name}</h3>
                 <p className='title-date'>{date}</p>
                 <h1 className='title-temp'> {(weather.main.temp - 273.15).toFixed(1)}°C</h1>
                 <p className='title-icon'><img src={iconUrl} alt="icon"/>{weather.weather[0].description}</p>
-                <img className='image-city' src='https://images.pexels.com/photos/1816714/pexels-photo-1816714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='imagen de ciudad'/>  
+                {/*<img className='image-city' src='https://images.pexels.com/photos/1816714/pexels-photo-1816714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='imagen de ciudad'/> */} 
                   <div> 
-                    <div >
+              </div>
+            </div>
+            <div className='temps-container'>
                       <h5 className='temps'>Temperatura maxima: {(weather.main.temp_max - 273.15).toFixed(1)}°C </h5>
                       <h5 className='temps'>Temperatura minimo: {(weather.main.temp_min - 273.15).toFixed(1)}°C </h5>
                       <h5 className='temps'>Sensacion termica: {(weather.main.feels_like - 273.15).toFixed(1)}°C </h5>
                       <h5 className='temps'>Humedad: {(weather.main.humidity)}%</h5>
                       <h5 className='temps'>Velocidad del viento: {(weather.wind.speed)}m/s</h5>
-                    </div>  
-                  </div>  
-              </div>
-            </div>
-                   <div >
+                    </div> 
+                   <div>
+                      <p className='fore-date'>Proximos pronosticos: </p>
                       <div className='temps'>
                         <p className='fore-date'>{forecastDate3}h</p>
                         <p className='paraph'><img src={iconUrl3} alt='icon'/>{forecast.list[1].weather[0].description}</p>

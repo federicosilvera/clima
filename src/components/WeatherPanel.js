@@ -15,13 +15,13 @@ const WeatherPanel = () => {
     const [show, setShow] = useState(false);
     const [location, setLocation] = useState("");
 
-    const getLocation = async(loc) => {
+    const getLocation = async(location) => {
         setLoading(true);
-        setLocation(loc);
+        setLocation(location);
 
         //weather
 
-        urlWeather = urlWeather + cityUrl + loc;
+        urlWeather = urlWeather + cityUrl + location;
 
         await fetch(urlWeather).then((response) =>{
             if(!response.ok) throw{response}
@@ -32,11 +32,12 @@ const WeatherPanel = () => {
         }).catch(error=>{
             setLoading(false);
             setShow(false);
+            alert("Introduce una ciudad correcta")
         })
 
         //forecast
 
-        urlForecast = urlForecast + cityUrl + loc;
+        urlForecast = urlForecast + cityUrl + location;
 
         await fetch(urlForecast).then((response) =>{
             if(!response.ok) throw{response}
