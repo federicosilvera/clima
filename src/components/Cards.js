@@ -60,7 +60,7 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
                       <h5 className='temps'>Humedad: {(weather.main.humidity)}%</h5>
                       <h5 className='temps'>Velocidad del viento: {(weather.wind.speed)}m/s</h5>
                     </div> 
-                   <div>
+                   <div className='forest-container'>
                       <p className='fore-date'>Proximos pronosticos: </p>
                       <div className='temps'>
                         <p className='fore-date'>{forecastDate3}h</p>

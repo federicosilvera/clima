@@ -12,16 +12,20 @@ div .showData{
     display: flex;
     justify-content: center;
     align-content: center;
+    text-align: center;
     height: 70%;
     margin-right: 40px;
     flex-direction: column;
+    background-color:  rgba(9,9,121,0.2);
+    border-radius: 15px;
+    padding: 5px;
 }
 
 .title-city{
     max-width: 60%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     color: black;
     font-size: 3rem;
     font-weight: 700;
@@ -31,7 +35,7 @@ div .showData{
     max-width: 60%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     color: black;
     font-size: 2rem;
     font-weight: 700;
@@ -41,7 +45,7 @@ div .showData{
     max-width: 60%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     color: black;
     font-size: 2rem;
     font-weight: 700;
@@ -51,22 +55,25 @@ div .showData{
     max-width: 60%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     color: black;
     padding-left: 20px;
-
     font-size: 2rem;
     font-weight: 700;
 }
 
 .temps-container{
     margin-right: 70px;
+    background-color:  rgba(9,9,121,0.2);
+    border-radius: 15px;
+    padding: 5px;
 }
 
 .temps{
     color: black;
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .fore-date{
@@ -88,8 +95,24 @@ div .showData{
     justify-self: center;
 }
 
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .paraph{
     font-weight: 700;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.forest-container{
+    background-color:  rgba(9,9,121,0.2);
+    border-radius: 15px;
+    padding: 5px;
 }
 
 @media (max-width:1280px) {
@@ -143,6 +166,7 @@ div .showData{
     .title-icon{
         padding-left: 0px;
         font-size: 1rem;
+        margin: 0px;
     }
 
     .paraph{
@@ -157,6 +181,13 @@ div .showData{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .temps-container{
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
 }
 
