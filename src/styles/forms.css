@@ -35,10 +35,14 @@
         align-self: center;
         margin-top: 5px;
         padding-top: 10px;
-        
+        margin-bottom: 10px;
     }
 
     .form{
         padding: 0px;
+    }
+
+    div .nav{
+        width: 100vh;
     }
 }
