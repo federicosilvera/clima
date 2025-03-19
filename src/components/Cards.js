@@ -80,10 +80,10 @@ const Cards = ({loadingData, weather, showData, forecast}) => {
                   </div>
           </div> 
         ):(
-        <>
+        <div>
           <h2 className="no-info">Hola 👋, por favor ingresa una ciudad para dar nuestras aproximaciones meteorologicas ⛅</h2>
           <div> <img  className='wait' src={waiting} alt='Imagen esperando' /> </div>
-        </>
+        </div>
         )
       }
 

@@ -85,11 +85,12 @@ div .showData{
 .no-info{
     color: black;
     display: flex;
-    justify-content: center;
+    justify-self: center;
     font-size: 2rem;
     background-color:  rgba(9,9,121,0.2);
     border-radius: 15px;
     padding: 5px;
+    width: auto;
 }
 
 .wait{
