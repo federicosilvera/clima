@@ -8,5 +8,5 @@ body{
   background-repeat: no-repeat;
   height: 100vh;
   height: auto;
-  background-attachment: fixed;
+  background-attachment:fixed, scroll;
 }
